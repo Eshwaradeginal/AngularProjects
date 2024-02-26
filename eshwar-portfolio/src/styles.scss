@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: rgb(36, 33, 33);
+    color: white;
+}
+.sectionlogo{
+    width: 50px; /* Set width of the image */
+    height: 50px; /* Set height of the image */
+    padding: 5px;
+    filter: brightness(0) invert(1);
+  }
+
+.sectionheader{
+    font-size: 36px;
+}
+.cardborder{
+    border-color: white; 
+    border-radius: 5px;
+}

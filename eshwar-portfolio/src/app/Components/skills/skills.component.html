@@ -1,0 +1,21 @@
+
+<div class="container">
+    <div class=" text-center mb-5">
+        <span><img class="sectionlogo" src="../../../assets/Icons/skill-svgrepo-com.svg" alt="" srcset=""></span>
+        <span class="sectionheader">Skills</span>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of Skills" class="col-md-3">
+            <div class="skill-progress">
+                <div class="d-flex" [ngStyle]="{ 'background-color': item.color, 'height': 'inherit', 'width': getwidthpercentage(item.percent) }">
+                    <div class="skill-name">
+                        <span>{{ item.name }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+</div>

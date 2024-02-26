@@ -1,0 +1,32 @@
+<div class="row justify-content-center align-items-stretch">
+    <div class="col-sm-10  text-center mb-5">
+        <span><img class="sectionlogo" src="../../../assets/Icons/education-cap-svgrepo-com.svg" alt="" srcset=""></span>
+        <span class="sectionheader">Education</span>
+    </div>
+    <div class="col-sm-5 d-flex">
+        <div class="card w-100">
+            <div class="card-body">
+                <h5 class="card-title">Education</h5>
+                <div *ngFor="let item of edu.Education">
+                    <h6 class="card-subtitle mb-2 text-muted">{{item.qual}}</h6>
+                    <p class="card-text">{{item.course}}</p>
+                    <p class="card-text">{{item.year}}</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-5 d-flex">
+        <div class="card w-100">
+            <div class="card-body">
+                <h5 class="card-title">Certification</h5>
+                <div *ngFor="let cert of edu.Certification">
+                    <h6 class="card-subtitle mb-2 text-muted">{{cert.cname}}</h6>
+                    <p class="card-text">{{cert.CompletedYear}}</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
